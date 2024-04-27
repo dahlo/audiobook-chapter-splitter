@@ -47,7 +47,7 @@ git clone https://github.com/dahlo/audiobook-chapter-splitter.git
     -i: Path to the input file
     -o: Path to the output directory
     -c: Keyword that is used to identify breakpoints between chapters (case-insensitive)
-    -w: Use this flag to use OpenAI's Whisper for transcription
+    -w: Use this flag to use OpenAIs Whisper for transcription
     -v: Use this flag to use Vosk for transcription
     -a: Pass any additional arguments to transcriber using this flag
     -h: Print this help message
