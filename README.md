@@ -7,7 +7,7 @@ The steps can be summarized as follows:
 1. Use `grep` to find the keyword that separates chapters and the timestamps they occur at in the `srt` file.
 1. Use `ffmpeg` to split the audiobook file into one file per chapter based on the timestamps.
 
-My own use case is to split audiobooks into chapters, but it will work for any type of audio file that has a keyword that separates sections.
+My own use case is to split audiobooks into chapters, but it will work for any type of audio file in any language supported by the speech recognition tool, and that has a keyword that separates sections.
 
 ## Prerequisites
 
