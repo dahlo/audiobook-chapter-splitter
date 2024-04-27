@@ -1,6 +1,6 @@
 # audiobook-chapter-splitter
 
-A tool to split monolithic audiobook files into one file per chapter. Based on speech recognition (whisper or vosk) and finding a user defined keyword to separate chapter.  
+A tool to split monolithic audiobook files into one file per chapter. Based on speech recognition (whisper or vosk) and finding a user defined keyword to separate chapter. Inspired by Dan Gravell's blog post [Splitting audiobooks into chapters with AI and crossed fingers](https://www.blisshq.com/music-library-management-blog/2021/01/22/splitting-audiobooks-chapters-ai/).
 
 ## Prerequisites
 
