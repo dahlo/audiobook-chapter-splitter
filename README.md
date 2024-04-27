@@ -7,6 +7,8 @@ The steps can be summarized as follows:
 1. Use `grep` to find the keyword that separates chapters and the timestamps they occur at in the `srt` file.
 1. Use `ffmpeg` to split the audiobook file into one file per chapter based on the timestamps.
 
+My own use case is to split audiobooks into chapters, but it will work for any type of audio file that has a keyword that separates sections.
+
 ## Prerequisites
 
 You need either [Whisper](https://github.com/openai/whisper) or [Vosk](https://alphacephei.com/vosk/) installed on your system. If both are installed, Whisper will be used by default if nothing else is specified using the command-line arguments.
