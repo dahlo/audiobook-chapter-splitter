@@ -163,7 +163,7 @@ echo "        -ss $prev_start_time}}$prev_chapter_title" >> "$work_dir/chapters.
 
 # save input file extension
 input_file_extension=$(basename "$input_file" | rev | cut -d. -f1 | rev)
-echo "$work_dir/chapters.txt"
+
 # split the audio file into chapters
 while read -r line; do
     start_time=$(echo "$line" | cut -d'}' -f1)
