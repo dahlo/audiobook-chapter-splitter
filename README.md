@@ -3,7 +3,7 @@
 A tool to split monolithic audiobook files into one file per chapter. Based on speech recognition (whisper or vosk) and finding a user defined keyword to separate chapters. Inspired by Dan Gravell's blog post [Splitting audiobooks into chapters with AI and crossed fingers](https://www.blisshq.com/music-library-management-blog/2021/01/22/splitting-audiobooks-chapters-ai/).
 
 The steps can be summarized as follows:
-1. Transcribe the audiobook file using a speech recognition tool to a srt file.
+1. Transcribe the audiobook file using a speech recognition tool to a `srt` file.
 1. Use `grep` to find the keyword that separates chapters and the timestamps they occur at.
 1. Use `ffmpeg` to split the audiobook file into one file per chapter based on the timestamps.
 
