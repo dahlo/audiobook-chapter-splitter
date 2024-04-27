@@ -10,15 +10,17 @@ print_usage() {
   This script splits an audiobook file into chapters.
 
   Usage:
-  bash $(basename $0) -i <input file> -o <output directory> -c <chapter keyword> [-w] [-v] [-a ARGS] [--help
+  $(basename $0) -i <input file> -o <output directory> -c <chapter keyword> [-w] [-v] [-a ARGS] [-h]
+  ex.
+  $(basename $0) -i audiobook.mp3 -o chapters -c chapter -w -a \"--model medium --language Swedish\"
 
   Options:
     -i: Path to the input file
     -o: Path to the output directory
-    -c: Keyword that is used to identify breakpoints between chapters
+    -c: Keyword that is used to identify breakpoints between chapters (case-insensitive)
     -w: Use this flag to use OpenAI's Whisper for transcription
     -v: Use this flag to use Vosk for transcription
-    -a: Pass any additional arguments to transcribe using this flag
+    -a: Pass any additional arguments to transcriber using this flag
     -h: Print this help message
 """
   printf "$usage"
